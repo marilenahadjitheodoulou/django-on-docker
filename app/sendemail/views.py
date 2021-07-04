@@ -9,7 +9,7 @@ def sendemail(request):
     if request.method == 'POST':
         sub = forms.Subscribe(request.POST)
         subject = 'Covid-19 Information'
-        message = 'Register to Covid-19 Contact Tracing'
+        message = 'Register to Covid-19 Contact Tracing. Check all Covid-19 Diagnostic Center: http://20.86.114.60:8000/allcenters/ '
         recepient = str(sub['Email'].value())
         send_mail(subject, 
             message, EMAIL_HOST_USER, [recepient], fail_silently = False)
