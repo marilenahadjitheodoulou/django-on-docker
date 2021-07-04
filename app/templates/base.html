@@ -32,7 +32,7 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
     <div class="container">
-      <a class="navbar-brand" href="{% url 'userprofiles:home' %} "> <img src="\media\covid.jpg" style="width:200px;height:110px;" ></a>
+      <a class="navbar-brand" href="{% url 'userprofiles:home' %} "> <img src="https://ec.europa.eu/eurostat/documents/10760954/10762597/COVID_overview_image.jpg/5eae3b08-6981-e979-5edb-a71bedb2c379?t=1587976128000.jpg" style="width:200px;height:110px;" ></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -55,6 +55,7 @@
               <a class="dropdown-item" href="{% url 'password_change' %}"><i class="fa fa-lock" style="font-size:20px"></i> Change password</a>
               <a class="dropdown-item" href="{% url 'contacts:upload' %}"><i class="fa fa-user-plus" style="font-size:20px"></i> Create a Close Contact</a>
               <a class="dropdown-item" href="{% url 'contacts:mycontacts' %}"><i class="fa fa-users" style="font-size:20px"></i> My Close Contacts</a>
+              <a class="dropdown-item" href="{% url 'sendemail' %}"><i class="fa fa-paper-plane" style="font-size:20px"></i> Send Email</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="{% url 'logout' %}"><i class="fa fa-sign-out" style="font-size:20px"></i> Log out</a>
             </div>
